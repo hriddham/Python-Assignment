@@ -1,5 +1,4 @@
 while True:
-    # Display the menu options
     print("\n--- Simple Calculator ---")
     print("1. Addition")
     print("2. Subtraction")
@@ -7,15 +6,12 @@ while True:
     print("4. Division")
     print("5. Exit")
 
-    # Take choice from the user
     choice = input("Enter your choice (1-5): ")
 
-    # Check if the user wants to exit
     if choice == "5":
         print("Exiting the program. Goodbye!")
         break
 
-    # If the user selects a valid operation, ask for the two numbers
     elif choice in ("1", "2", "3", "4"):
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
@@ -39,6 +35,5 @@ while True:
             else:
                 print("Cannot divide by zero.")
 
-    # Handle invalid inputs
     else:
         print("Please choose a number from 1 to 5.")
